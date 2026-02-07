@@ -1,14 +1,5 @@
-title: CS 450 Machine Learning
-description: Fall 2025 Course Materials
-baseurl: "" # Leave empty if using username.github.io
-url: "https://atoosanasiri.github.io"
+title: CSC491
+description: DCSIL
 theme: just-the-docs
 
-# Enable search
-search_enabled: true
-
-# Color scheme
-color_scheme: light  # or 'dark'
-
-# Footer
-footer_content: "© 2025 Your University. <a href='/license'>License</a>"
+url: https://atoosanasiri.github.io/w2026-csc491
