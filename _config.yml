@@ -2,6 +2,7 @@ title: CS 450 Machine Learning
 description: Fall 2025 Course Materials
 baseurl: "" # Leave empty if using username.github.io
 url: "https://atoosanasiri.github.io"
+theme: just-the-docs
 
 # Enable search
 search_enabled: true
