@@ -1,8 +1,13 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
-theme: just-the-docs
+title: CS 450 Machine Learning
+description: Fall 2025 Course Materials
+baseurl: "" # Leave empty if using username.github.io
+url: "https://atoosanasiri.github.io"
 
-url: https://atoosanasiri.github.io
+# Enable search
+search_enabled: true
 
-aux_links:
-  Template Repository: https://github.com/atoosanasiri/just-the-docs-template
+# Color scheme
+color_scheme: light  # or 'dark'
+
+# Footer
+footer_content: "© 2025 Your University. <a href='/license'>License</a>"
