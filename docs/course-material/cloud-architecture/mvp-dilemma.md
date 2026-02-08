@@ -105,3 +105,6 @@ You're not building for Netflix scale. You're building to prove the concept work
 The architect's job: maximize learning velocity while minimizing rework cost. Ship fast. Ship solid. Ship something you can build on.
 
 ---
+
+[Previous: Automation is Not Optional](automation){: .btn .float-left }
+[Next: Suggested Reading & Bibliography](reading-bibliography){: .btn .btn-primary .float-right }

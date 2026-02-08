@@ -82,3 +82,6 @@ User uploads CSV → API returns "Processing started, job ID: 12345" immediately
 > **For the testbed:** Edge is overkill for a simple web app with localized users. Prioritize it only if you expect globally distributed traffic or need ultra-low latency.
 
 ---
+
+[Previous: Pre-Selection Analysis](pre-selection-analysis){: .btn .float-left }
+[Next: Operational Excellence](operational-excellence){: .btn .btn-primary .float-right }

@@ -83,3 +83,5 @@ Ask these questions to determine if something should be a separate service:
 > **Critical Insight:** "Best practices" are context-dependent. Kubernetes is over-engineering for a 50-user dashboard. PostgreSQL on a VM is under-engineering for a multi-tenant SaaS. Your job is to defend your choices against your constraints, not against a blog post.
 
 ---
+
+[Next: Pre-Selection Analysis](pre-selection-analysis){: .btn .btn-primary .float-right }

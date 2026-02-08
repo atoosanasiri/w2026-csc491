@@ -80,3 +80,6 @@ Serverless is not "zero infrastructure." It's "someone else's infrastructure, bi
 > **For the testbed:** Use serverless functions + managed database. No VM provisioning, no server patching. Deploy via Git push. Your entire infrastructure is code. Focus on proving the concept, not managing servers.
 
 ---
+
+[Previous: Thinking Like an Architect](thinking-like-architect){: .btn .float-left }
+[Next: Advanced Architectural Patterns](advanced-patterns){: .btn .btn-primary .float-right }

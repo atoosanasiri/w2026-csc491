@@ -77,3 +77,7 @@ If you read only three books on cloud architecture, read these:
 - Amazon Web Services. "AWS Well-Architected Framework." [https://aws.amazon.com/architecture/well-architected/](https://aws.amazon.com/architecture/well-architected/)
 - Google Cloud. "Google Cloud Architecture Framework." [https://cloud.google.com/architecture/framework](https://cloud.google.com/architecture/framework)
 - Microsoft Azure. "Azure Architecture Center." [https://learn.microsoft.com/en-us/azure/architecture/](https://learn.microsoft.com/en-us/azure/architecture/)
+
+---
+
+[Previous: The MVP Architect's Dilemma](mvp-dilemma){: .btn .float-left }

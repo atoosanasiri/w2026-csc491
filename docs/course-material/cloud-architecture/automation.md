@@ -79,3 +79,6 @@ Your infrastructure should be defined in code, version-controlled, and reproduci
 > **Principle:** Small, frequent deployments are safer than large, infrequent ones. Deploy 10 times per day with 1 feature each. Don't deploy once per month with 50 features.
 
 ---
+
+[Previous: Operational Excellence](operational-excellence){: .btn .float-left }
+[Next: The MVP Architect's Dilemma](mvp-dilemma){: .btn .btn-primary .float-right }

@@ -61,3 +61,6 @@ Servers crash. Databases lock up. Networks partition. Your architecture must ass
 > **Non-negotiable:** Instrument your code from Day One. Add structured logging before you add features. You will debug production issues. Make it possible.
 
 ---
+
+[Previous: Advanced Architectural Patterns](advanced-patterns){: .btn .float-left }
+[Next: Automation is Not Optional](automation){: .btn .btn-primary .float-right }

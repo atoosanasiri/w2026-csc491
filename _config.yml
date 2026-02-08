@@ -3,6 +3,14 @@ description: DCSIL Capstone Design Course
 
 url: https://atoosanasiri.github.io/w2026-csc491
 
+# Default layout for all pages under docs/
+defaults:
+  - scope:
+      path: "docs"
+      type: "pages"
+    values:
+      layout: "default"
+
 # Auxiliary links for the upper right navigation
 aux_links:
   "CSC491 on GitHub":
