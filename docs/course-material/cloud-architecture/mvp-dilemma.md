@@ -6,33 +6,37 @@ nav_order: 6
 ---
 
 ## The MVP Architect's Dilemma
+{: .section-header }
 
 ### Tactical Execution: Deploy Fast Without Technical Debt Traps
 
-**Technical Debt vs. Architectural Compromise:**
-
-- **Acceptable compromise** means using serverless instead of Kubernetes—you can migrate later without rewriting application logic
-- **Technical debt** means skipping authentication to ship faster—now every endpoint is public and retrofitting auth requires touching every route
+{: .framework-box }
+> #### Technical Debt vs. Architectural Compromise
+>
+> - **Acceptable compromise** means using serverless instead of Kubernetes—you can migrate later without rewriting application logic
+> - **Technical debt** means skipping authentication to ship faster—now every endpoint is public and retrofitting auth requires touching every route
 
 ---
 
 ### Defer Optimization, Not Foundations
 
-**The Principle:** You can defer performance tuning. You cannot defer foundational architecture decisions.
+{: .callout-box }
+> **The Principle:** You can defer performance tuning. You cannot defer foundational architecture decisions.
 
-**Deferrable (optimize later):**
-
-- Performance tuning (database indexes, query optimization, caching strategies)
-- Observability dashboards (custom Grafana panels, advanced alerting rules)
-- Multi-region deployment (start single-region, expand when traffic justifies it)
-- Advanced CI/CD (canary releases, staged rollouts, automated rollback logic)
-
-**Non-deferrable (build it now):**
-
-- Authentication/Authorization (every endpoint must verify identity from Day One)
-- Encrypted connections HTTPS (non-negotiable, free via Let's Encrypt or managed platforms)
-- Secret management (database credentials in GitHub Secrets, never in code)
-- Basic CI/CD (automated deployment pipeline where `git push` → production)
+{: .framework-box }
+> #### Deferrable (optimize later)
+>
+> - Performance tuning (database indexes, query optimization, caching strategies)
+> - Observability dashboards (custom Grafana panels, advanced alerting rules)
+> - Multi-region deployment (start single-region, expand when traffic justifies it)
+> - Advanced CI/CD (canary releases, staged rollouts, automated rollback logic)
+>
+> #### Non-deferrable (build it now)
+>
+> - Authentication/Authorization (every endpoint must verify identity from Day One)
+> - Encrypted connections HTTPS (non-negotiable, free via Let's Encrypt or managed platforms)
+> - Secret management (database credentials in GitHub Secrets, never in code)
+> - Basic CI/CD (automated deployment pipeline where `git push` → production)
 
 ---
 
@@ -74,9 +78,8 @@ Netflix has 1,000 engineers and 200 million users.
 
 You have 2 engineers and an MVP to validate.
 
-**Build for the problem you HAVE, not the problem you IMAGINE.**
-
-Kubernetes is magnificent for 10,000 microservices. For a sprint-constrained web app, it's a distraction that prevents shipping.
+{: .callout-box }
+> **Build for the problem you HAVE, not the problem you IMAGINE.** Kubernetes is magnificent for 10,000 microservices. For a sprint-constrained web app, it's a distraction that prevents shipping.
 
 **Document Your Assumptions:**
 

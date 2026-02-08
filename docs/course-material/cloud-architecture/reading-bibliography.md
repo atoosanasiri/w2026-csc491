@@ -6,6 +6,7 @@ nav_order: 7
 ---
 
 ## Suggested Reading & Bibliography
+{: .section-header }
 
 If you read only three books on cloud architecture, read these:
 

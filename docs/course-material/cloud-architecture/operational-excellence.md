@@ -6,10 +6,12 @@ nav_order: 4
 ---
 
 ## Operational Excellence in the Cloud
-git 
+{: .section-header }
+
 ### Reliability: Self-Healing and High Availability
 
-Servers crash. Databases lock up. Networks partition. Your architecture must assume failure.
+{: .callout-box }
+> **Design for Failure:** Servers crash. Databases lock up. Networks partition. Your architecture must assume failure.
 
 **Self-Healing:** Automated recovery through:
 
@@ -32,7 +34,8 @@ Servers crash. Databases lock up. Networks partition. Your architecture must ass
 
 **Old model:** Trust everything inside the network perimeter. Focus security on the firewall.
 
-**Zero-Trust model:** Trust nothing. Verify every request, every service-to-service call, every data access.
+{: .callout-box }
+> **Zero-Trust model:** Trust nothing. Verify every request, every service-to-service call, every data access.
 
 **Implementing Zero-Trust:**
 
@@ -51,7 +54,8 @@ Servers crash. Databases lock up. Networks partition. Your architecture must ass
 - **Elasticity** means the system automatically adds/removes resources based on load
 - Example: Dashboard usage spikes 9am-5pm, idle overnight. Elastic system scales up at 9am, scales down at 5pm. You pay for 8 hours of compute, not 24.
 
-**Observability:** You can't fix what you can't see.
+{: .callout-box }
+> **Observability:** You can't fix what you can't see.
 
 - **Logs** tell you what happened (structured JSON output, centralized aggregation via CloudWatch or Datadog, searchable and filterable)
 - **Metrics** tell you when (request rate, error rate, latency percentiles, dashboards with alerts using Prometheus or Grafana)

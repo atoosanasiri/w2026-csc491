@@ -6,6 +6,7 @@ nav_order: 3
 ---
 
 ## Advanced Architectural Patterns
+{: .section-header }
 
 ### Decoupled Foundations: API Gateway Pattern
 
@@ -16,7 +17,8 @@ nav_order: 3
 - **Request routing** — `/api/users` → User Service, `/api/reports` → Analytics Service
 - **Protocol translation** — HTTP → gRPC, REST → GraphQL
 
-**Why this matters:** Your backend doesn't handle auth logic, your frontend doesn't know service topology—the gateway is the contract.
+{: .callout-box }
+> **Why this matters:** Your backend doesn't handle auth logic, your frontend doesn't know service topology—the gateway is the contract.
 
 ---
 
@@ -29,7 +31,8 @@ Your HTML, CSS, JavaScript, and images should never be served from your applicat
 - **Static assets:** S3 + CloudFront, or Netlify → Globally distributed, cached at edge
 - **Dynamic API:** Lambda/Cloud Run behind API Gateway → Handles business logic, database queries
 
-**Why separate?** Static content scales infinitely at near-zero cost. Dynamic content is expensive and stateful. Don't pay compute costs to serve a logo.
+{: .callout-box }
+> **Why separate?** Static content scales infinitely at near-zero cost. Dynamic content is expensive and stateful. Don't pay compute costs to serve a logo.
 
 {: .note }
 > **For the testbed:** Choose infrastructure that matches your web app's requirements—static hosting for frontend, serverless or containerized compute for backend, and managed database for persistence. Prioritize services with free tiers, automatic scaling, and minimal operational overhead to focus on building features rather than managing infrastructure.

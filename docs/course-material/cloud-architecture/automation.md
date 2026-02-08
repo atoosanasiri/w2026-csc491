@@ -6,10 +6,12 @@ nav_order: 5
 ---
 
 ## Automation is Not Optional
+{: .section-header }
 
 ### If It's Not Automated, It's Not Architecture
 
-If you're looking for a DevOps person to support your cloud deployment, you might not find one. Modern development expects engineers to own their deployment pipeline. If your process is "ask someone else to push it live," you don't have architecture—you have a bottleneck.
+{: .callout-box }
+> **Key Insight:** If you're looking for a DevOps person to support your cloud deployment, you might not find one. Modern development expects engineers to own their deployment pipeline. If your process is "ask someone else to push it live," you don't have architecture—you have a bottleneck.
 
 **Why you don't need a DevOps person:** The role of "DevOps" was never meant to be a job title—it's a set of practices that developers own. When deployment, infrastructure management, and monitoring are treated as someone else's responsibility, you create a bottleneck and a single point of failure. Modern architecture embeds automation into the design itself. Developers write the deployment pipeline alongside the application code.
 
@@ -17,7 +19,8 @@ If you're looking for a DevOps person to support your cloud deployment, you migh
 
 ### CI/CD: The Central Nervous System
 
-Continuous Integration / Continuous Deployment is not a nice-to-have. It's the only mechanism that ensures code in Git matches code in production.
+{: .callout-box }
+> **Non-negotiable:** Continuous Integration / Continuous Deployment is not a nice-to-have. It's the only mechanism that ensures code in Git matches code in production.
 
 **What CI/CD Actually Does:**
 
@@ -41,7 +44,8 @@ Your infrastructure should be defined in code, version-controlled, and reproduci
 
 ### Secret Management: GitHub Secrets, Vault, Cloud KMS
 
-**Never hardcode credentials.** Not in code. Not in config files. Not in environment variables committed to Git.
+{: .callout-box }
+> **Never hardcode credentials.** Not in code. Not in config files. Not in environment variables committed to Git.
 
 **Secret Management Strategy:**
 
@@ -56,24 +60,25 @@ Your infrastructure should be defined in code, version-controlled, and reproduci
 
 ### Deployment Strategies: Gated Releases and Rollbacks
 
-**Blue-Green Deployment:**
-
-- Run two identical environments (Blue = current production, Green = new version)
-- Deploy to Green, test, switch traffic
-- If broken, switch back to Blue instantly
-
-**Canary Releases:**
-
-- Deploy new version to 5% of users
-- Monitor error rates
-- If stable, gradually increase to 100%
-- If broken, rollback affects only 5%
-
-**Feature Flags:**
-
-- Deploy code to production with new features disabled
-- Enable via config flag
-- If feature breaks, disable flag without redeploying
+{: .framework-box }
+> #### Blue-Green Deployment
+>
+> - Run two identical environments (Blue = current production, Green = new version)
+> - Deploy to Green, test, switch traffic
+> - If broken, switch back to Blue instantly
+>
+> #### Canary Releases
+>
+> - Deploy new version to 5% of users
+> - Monitor error rates
+> - If stable, gradually increase to 100%
+> - If broken, rollback affects only 5%
+>
+> #### Feature Flags
+>
+> - Deploy code to production with new features disabled
+> - Enable via config flag
+> - If feature breaks, disable flag without redeploying
 
 {: .important }
 > **Principle:** Small, frequent deployments are safer than large, infrequent ones. Deploy 10 times per day with 1 feature each. Don't deploy once per month with 50 features.

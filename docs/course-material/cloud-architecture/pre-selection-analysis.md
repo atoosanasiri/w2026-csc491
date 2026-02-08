@@ -6,6 +6,7 @@ nav_order: 2
 ---
 
 ## Pre-Selection Analysis
+{: .section-header }
 
 ### Tenancy Models: Single vs. Multi-Tenant
 
@@ -26,43 +27,46 @@ nav_order: 2
 
 ### Infrastructure Responsibility: What You Manage vs. What You Delegate
 
-This is the most consequential architectural decision you'll make.
+{: .callout-box }
+> **The Critical Decision:** This is the most consequential architectural decision you'll make.
 
-#### Self-Managed Open Source (IaaS)
-
-**What you control:** OS, runtime, application code, database tuning, backups, security patches.
-
-**Examples:** PostgreSQL on EC2, Redis on a VM, self-hosted Kubernetes.
-
-**When to choose:** You need fine-grained control (custom kernel modules, specialized hardware), or vendor costs are prohibitive at scale.
-
-**Operational cost:** You own the pager. Database crashes at 3am? You're SSHing in.
-
-#### Managed Services (PaaS/DBaaS)
-
-**What you control:** Schema design, queries, application code. Provider handles infrastructure.
-
-**Examples:** RDS, Cloud SQL, Heroku Postgres, managed Redis.
-
-**When to choose:** You want reliability without operational burden. Sprint-style deadlines.
-
-**Trade-off:** Higher per-unit cost, less tuning control, potential for vendor-specific quirks.
-
-#### Serverless (FaaS/BaaS)
-
-**What you control:** Application code only. No servers, no scaling config.
-
-**Examples:** Lambda, Cloud Functions.
-
-**When to choose:** Unpredictable traffic, zero operational overhead, pay-per-use economics.
-
-**Trade-off:** Cold starts, execution time limits, debugging complexity.
+{: .framework-box }
+> #### Self-Managed Open Source (IaaS)
+>
+> **What you control:** OS, runtime, application code, database tuning, backups, security patches.
+>
+> **Examples:** PostgreSQL on EC2, Redis on a VM, self-hosted Kubernetes.
+>
+> **When to choose:** You need fine-grained control (custom kernel modules, specialized hardware), or vendor costs are prohibitive at scale.
+>
+> **Operational cost:** You own the pager. Database crashes at 3am? You're SSHing in.
+>
+> #### Managed Services (PaaS/DBaaS)
+>
+> **What you control:** Schema design, queries, application code. Provider handles infrastructure.
+>
+> **Examples:** RDS, Cloud SQL, Heroku Postgres, managed Redis.
+>
+> **When to choose:** You want reliability without operational burden. Sprint-style deadlines.
+>
+> **Trade-off:** Higher per-unit cost, less tuning control, potential for vendor-specific quirks.
+>
+> #### Serverless (FaaS/BaaS)
+>
+> **What you control:** Application code only. No servers, no scaling config.
+>
+> **Examples:** Lambda, Cloud Functions.
+>
+> **When to choose:** Unpredictable traffic, zero operational overhead, pay-per-use economics.
+>
+> **Trade-off:** Cold starts, execution time limits, debugging complexity.
 
 ---
 
 ### The Serverless Question
 
-Serverless is not "zero infrastructure." It's "someone else's infrastructure, billed by the millisecond."
+{: .callout-box }
+> **Key Distinction:** Serverless is not "zero infrastructure." It's "someone else's infrastructure, billed by the millisecond."
 
 **When serverless wins:**
 
