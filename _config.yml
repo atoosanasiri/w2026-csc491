@@ -1,5 +1,40 @@
 title: CSC491
-description: DCSIL
-theme: just-the-docs
+description: DCSIL Capstone Design Course
 
 url: https://atoosanasiri.github.io/w2026-csc491
+
+# Auxiliary links for the upper right navigation
+aux_links:
+  "CSC491 on GitHub":
+    - "https://github.com/atoosanasiri/w2026-csc491"
+
+# Makes Aux links open in a new tab
+aux_links_new_tab: true
+
+# Enable search
+search_enabled: true
+
+# Enable heading anchors
+heading_anchors: true
+
+# Back to top link
+back_to_top: true
+back_to_top_text: "Back to top"
+
+# Plugins
+plugins:
+  - jekyll-include-cache
+  - jekyll-seo-tag
+
+# Footer content
+footer_content: 'Copyright &copy; 2026 DCSIL - University of Toronto'
+
+# Kramdown configuration
+kramdown:
+  toc_levels: 1..2
+
+# Sass configuration
+sass:
+  style: compressed
+  quiet_deps: true
+  silence_deprecations: ["import", "global-builtin", "color-functions"]

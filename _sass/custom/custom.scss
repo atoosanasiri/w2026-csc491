@@ -1,0 +1,111 @@
+// Custom course material styling
+// Based on cloud_architecture_lecture.html design
+
+// 1. TITLE HEADER - Large, monospace, bold
+.lecture-title {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 20px;
+  border-bottom: 3px solid $body-text-color;
+  padding-bottom: 20px;
+}
+
+// 2. TAGLINE - Small, uppercase, monospace
+.lecture-meta {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  font-size: 0.9rem;
+  color: $grey-dk-000;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 40px;
+}
+
+// 3. LECTURE OVERVIEW - Highlighted info box
+.lecture-info {
+  background: $sidebar-color;
+  border-left: 4px solid $link-color;
+  padding: 30px;
+  margin: 40px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+  h3, h4 {
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: $link-color;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  p {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+  }
+}
+
+// 4. SECTION HEADER - H2 with left accent bar
+.section-header {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  font-size: 1.8rem;
+  font-weight: 600;
+  position: relative;
+  padding-left: 20px;
+  margin: 60px 0 30px 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: $link-color;
+  }
+}
+
+// 5. CALLOUT BOX - Emphasized statement with accent border
+.callout-box {
+  background: $code-background-color;
+  border-left: 3px solid $link-color;
+  padding: 20px 25px;
+  margin: 30px 0;
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  font-size: 0.9rem;
+  line-height: 1.6;
+
+  strong {
+    color: $link-color;
+    font-weight: 600;
+  }
+}
+
+// 6. FRAMEWORK BOX - Structured content sections with header
+.framework-box {
+  background: $sidebar-color;
+  border: 2px solid $border-color;
+  padding: 30px;
+  margin: 30px 0;
+
+  h3, h4 {
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: $body-text-color;
+    border-bottom: 2px solid $link-color;
+    padding-bottom: 10px;
+  }
+
+  h4 {
+    font-size: 1rem;
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+
+  p {
+    margin-bottom: 15px;
+  }
+}
