@@ -1,11 +1,11 @@
 ---
-title: "Section 5: Automation is Not Optional"
+title: "Automation is Not Optional"
 layout: default
 parent: "Cloud Architecture Design"
 nav_order: 5
 ---
 
-## Section 5: Automation is Not Optional
+## Automation is Not Optional
 
 ### If It's Not Automated, It's Not Architecture
 

@@ -1,11 +1,11 @@
 ---
-title: "Section 1: Thinking Like an Architect"
+title: "Thinking Like an Architect"
 layout: default
 parent: "Cloud Architecture Design"
 nav_order: 1
 ---
 
-## Section 1: Thinking Like an Architect
+## Thinking Like an Architect
 {: .section-header }
 
 ### The Transition: From Coder to System Designer

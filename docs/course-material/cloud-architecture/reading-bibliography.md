@@ -1,11 +1,11 @@
 ---
-title: "Section 7: Suggested Reading & Bibliography"
+title: "Suggested Reading & Bibliography"
 layout: default
 parent: "Cloud Architecture Design"
 nav_order: 7
 ---
 
-## Section 7: Suggested Reading & Bibliography
+## Suggested Reading & Bibliography
 
 If you read only three books on cloud architecture, read these:
 

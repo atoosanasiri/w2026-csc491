@@ -1,11 +1,11 @@
 ---
-title: "Section 6: The MVP Architect's Dilemma"
+title: "The MVP Architect's Dilemma"
 layout: default
 parent: "Cloud Architecture Design"
 nav_order: 6
 ---
 
-## Section 6: The MVP Architect's Dilemma
+## The MVP Architect's Dilemma
 
 ### Tactical Execution: Deploy Fast Without Technical Debt Traps
 

@@ -1,12 +1,12 @@
 ---
-title: "Section 4: Operational Excellence in the Cloud"
+title: "Operational Excellence in the Cloud"
 layout: default
 parent: "Cloud Architecture Design"
 nav_order: 4
 ---
 
-## Section 4: Operational Excellence in the Cloud
-
+## Operational Excellence in the Cloud
+git 
 ### Reliability: Self-Healing and High Availability
 
 Servers crash. Databases lock up. Networks partition. Your architecture must assume failure.

@@ -1,11 +1,11 @@
 ---
-title: "Section 2: Pre-Selection Analysis"
+title: "Pre-Selection Analysis"
 layout: default
 parent: "Cloud Architecture Design"
 nav_order: 2
 ---
 
-## Section 2: Pre-Selection Analysis
+## Pre-Selection Analysis
 
 ### Tenancy Models: Single vs. Multi-Tenant
 

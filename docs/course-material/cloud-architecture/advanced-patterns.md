@@ -1,11 +1,11 @@
 ---
-title: "Section 3: Advanced Architectural Patterns"
+title: "Advanced Architectural Patterns"
 layout: default
 parent: "Cloud Architecture Design"
 nav_order: 3
 ---
 
-## Section 3: Advanced Architectural Patterns
+## Advanced Architectural Patterns
 
 ### Decoupled Foundations: API Gateway Pattern
 
